@@ -1,7 +1,7 @@
-const mongoose=require("mongoose")
-const tasksSchema= new mongoose.Schema({
+import { Schema, model } from "mongoose"
+const tasksSchema= new Schema({
     name:String, 
     completed:Boolean
 })
 
-module.exports= mongoose.model("Task", tasksSchema)
+export default model("Task", tasksSchema)
