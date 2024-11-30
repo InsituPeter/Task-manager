@@ -1,4 +1,4 @@
-const Task = require("../models/Task")
+import Task from "../models/Task.js";
 const getAllTasks =  (req,res)=>{
   res.send("get all Task")
 }
@@ -28,4 +28,4 @@ const deleteTasks =(req,res)=>{
     res.send("delete Task")
 }
 
-module.exports = {getAllTasks, createTasks, getTasks, updateTasks, deleteTasks}
+export  {getAllTasks, createTasks, getTasks, updateTasks, deleteTasks}
